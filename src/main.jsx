@@ -12,7 +12,7 @@ const router = createBrowserRouter([
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <World/>
+    <World/>  
     <RouterProvider router={router} />
   </StrictMode>
 );
