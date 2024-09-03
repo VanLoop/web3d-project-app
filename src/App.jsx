@@ -1,13 +1,11 @@
-
 import './App.css'
+import Login from './pages/login/Login'
 
-const  App = () => {
+function App() {
+
   return (
-    <>
-    <h1>Hello World</h1>
-    </>
-  );
+    <Login />
+  )
 }
 
-export default App;
-  
+export default App
