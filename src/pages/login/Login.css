@@ -1,19 +1,32 @@
+/* 
+  Container for the login page.
+  Centers the content both horizontally and vertically using Flexbox.
+  Sets the height to 100% of the viewport height (100vh).
+*/
 .container-login {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
 }
 
+/* 
+  Styling for the welcome text on the login page.
+  Sets a larger font size and a dark gray color for better readability.
+*/
 .welcome-text {
-  font-size: x-large;
-  color: #333;
+  font-size: x-large; /* Larger text size for emphasis */
+  color: #333; /* Dark gray color for contrast */
 }
 
+/* 
+  Styling for the loading text on the login page.
+  Sets a medium font size and a lighter gray color to indicate loading state.
+*/
 .loading-text {
-  font-size: medium;
-  color: #666;
+  font-size: medium; /* Medium text size for normal loading indication */
+  color: #666; /* Lighter gray color for a subtle appearance */
 }
 
 
