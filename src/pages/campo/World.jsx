@@ -6,8 +6,8 @@ import useDonaStore from "../../stores/use-dona-store";
 
 const World = () => {
   const cameraSettings = {
-    position: [0, 0, 700], // Ajusta la posición de la cámara para estar alejada
-    fov: 75, // Ajusta el campo de visión si es necesario
+    position: [0, 0, 700],
+    fov: 75,
   };
 
   const { transformsDona } = useDonaStore();
