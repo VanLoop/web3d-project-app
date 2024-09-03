@@ -1,16 +1,16 @@
-/* eslint-disable react/no-unknown-property */
 import { TrackballControls } from "@react-three/drei"; // Usar TrackballControls
 import { Canvas } from "@react-three/fiber";
-import House from "./Dona";
+import Dona from "./Dona";
 import React from "react";
-import useHouseStore from "../../stores/use-dona-store";
+import useDonaStore from "../../stores/use-dona-store";
 
 const World = () => {
   const cameraSettings = {
-    position: [2, 0, 5],
+    position: [0, 0, 700], // Ajusta la posición de la cámara para estar alejada
+    fov: 75, // Ajusta el campo de visión si es necesario
   };
 
-  const { transformsHouse } = useHouseStore();
+  const { transformsDona } = useDonaStore();
 
   return (
     <React.Fragment>
@@ -31,10 +31,11 @@ const World = () => {
           shadow-camera-top={10}
           shadow-camera-bottom={-10}
         />
-        <House />
+        <Dona />
       </Canvas>
     </React.Fragment>
   );
 };
 
 export default World;
+
